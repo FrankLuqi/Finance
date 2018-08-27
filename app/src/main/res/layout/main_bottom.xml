@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="55dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:listDivider"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+        
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bid02"
+                />
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="首页"
+                android:textColor="@color/home_back_unselected"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_invest"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_invest"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bid04"
+                />
+
+            <TextView
+                android:id="@+id/tv_invest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="我要投资"
+                android:textColor="@color/home_back_unselected"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bid06"
+                />
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="我的资产"
+                android:textColor="@color/home_back_unselected"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bid08"
+                />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="更多"
+                android:textColor="@color/home_back_unselected"
+
+                />
+
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+
+</LinearLayout>
