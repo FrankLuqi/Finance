@@ -25,7 +25,7 @@ public class UIUtils {
     }
 
     /**
-     * 设置碎片所使用的llayout
+     * 设置碎片所使用的layout
      * @param layoutId
      * @return
      */

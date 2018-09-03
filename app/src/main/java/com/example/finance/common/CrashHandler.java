@@ -109,7 +109,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler{
         {
             @Override
             public void run() {
-                Log.e(TAG, "run: " );
+                Log.e(TAG, "running error 运行时错误: " +errorInfo);
             }
         }.start();
     }

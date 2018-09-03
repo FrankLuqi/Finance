@@ -26,10 +26,22 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
     androidTestCompile('com.android.support:support-annotations:26.1.0') {
         force = true
     }
+    //通过butterknife 可以方便的获取布局中的所有元素
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //通过import models 引入ViewPagerIndicator-master的library之后在project structure中添加dependency
     implementation project(':library')
+    //通过在libs中添加android-async-http-master获取异步网络请求库
+    //由于该网络请求库中去除了Header的东西，所以会出现Header[] headers找不到的错误
+    //解决方案如下
+    compile 'org.apache.httpcomponents:httpcore:4.4.2'
+
+    //引入fastjson
+    compile 'com.alibaba:fastjson:1.1.54.android'
+    //引入Picasso图片处理库
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 }
