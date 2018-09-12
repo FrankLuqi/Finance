@@ -76,4 +76,9 @@ public class UIUtils {
         Toast.makeText(getContext(),text,islong==true? Toast.LENGTH_LONG:Toast.LENGTH_SHORT).show();
     }
 
+    public static String[] getStringArray(int arrId)
+    {
+        return getContext().getResources().getStringArray(arrId);
+    }
+
 }

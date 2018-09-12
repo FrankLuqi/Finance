@@ -115,6 +115,11 @@ public abstract class LoadingPage extends FrameLayout{
         //因为不同的界面调用的成功界面不相同，所以这里通过添加抽象方法，不同的界面单独重写方法来获取传入的layout
         if (successView==null)
         {
+            //这里之所以没有使用UIUtiles中的getxmlView方法
+            //因为UIUtils中的context是application的context
+            //而loadingPage的mcontext是从container中获得的，是当前activity中的context
+            //因为要设置theme，而application是没有主题的，设置application的主题本质上是设置application中的
+            //所有activity的主题
             successView = View.inflate(mContext,LayoutId(),null);
             addView(successView,lp);
         }
